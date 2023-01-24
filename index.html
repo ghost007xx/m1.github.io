@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINAL TASK</title>
+    <link rel="stylesheet" href="edc.css">
+</head>
+<body onload="slider()">
+    
+    <div class="banner" >
+        <div class="s">
+            <img id="slide1"src="https://www.edcnitd.co.in/static/img/hmc1.jpeg" alt="" href="https://edcnitd.co.in/">
+        </div>
+    </div>
+    <div class="over">
+        <header class="ghostheader">
+            <img src="https://www.edcnitd.co.in/static/img/logo.png" alt="EDC-NITD" class="edclogo">
+            <nav class="n">
+                <u1 class="n-1">
+                    <li><a class="nlink" href="https://edcnitd.co.in/" target="_blank">HOME</a></li>
+                    <li><a class="nlink" href="https://edcnitd.co.in/" target="_blank">ABOUT</a></li>
+                    <li><a class="nlink" href="https://edcnitd.co.in/" target="_blank">REGISTER</a></li>
+                    <li><a class="nlink" href="https://edcnitd.co.in/" target="_blank">LOGIN</a></li>
+                </u1>
+            </nav>
+            <div class="ni">
+                <ion-icon name="apps-outline" class="nii"></ion-icon>
+                <ion-icon name="close-outline" class="nii"></ion-icon>
+            </div>
+        </header>
+    <section id="text">
+        <div class="content">
+            <h2>“The best way ”</h1>
+            <h3>“Winners ”</h3>
+            <div><button type="button">BECOME AN ENTREPRENEUR</button></div>
+        </div>
+    </section>
+    
+    </div>
+<div>
+<div class="bg">
+<section>       
+    <main>
+        <section class="edcabout">
+            <div class="heading">
+             <p id="about">ABOUT US </p><br>
+             <div class="sub">
+             <p>The Entrepreneurship Development Cell, NIT Durgapur is the institutions official Entrepreneurship Promoting student body. Through a plethora of initiatives throughout the year, we remain steadfast to our sole dream of creating a sustainable and diverse entrepreneurial ecosystem where the young and the elderly come together to make entrepreneurship a common reality in India.</p>
+            </div>
+        </div>
+        </section>
+    </main>
+
+</section>
+</div>
+<div class="RCARDS">
+
+            <div class="cont">
+                <div class="b">
+                  <img src="https://audition.edcnitd.co.in/static/base/media/monitor.gif" />
+                  <h4>Invesment</h4>
+                  <p>Entrepreneurship is neither an art nor a science its practice, here you never lose you either win or you learn. Dreams can only go so far. Eventually, you have to take that crucial first step
+                    
+                  </p>
+                </div>
+                <div class="b">
+                  <img src="https://audition.edcnitd.co.in/static/base/media/notebook.gif" />
+                  <h4>Work Palce</h4>
+                  <p>
+                    . Entrepreneurs must also have the right mindset and attitude to be successful. This includes being persistent and resilient in the face of challenges, having a positive attitude
+                  </p>
+                </div>
+                <div class="b">
+                  <img src="https://audition.edcnitd.co.in/static/base/media/film-strip.gif" />
+                  <h4>Creative Progress</h4>
+                  <p>
+                    To conclude Entrepreneurship is a challenging but rewarding path that requires a combination of creativity, drive, and the ability to take risks.
+                  </p>
+                </div>
+                <div class="b">
+                    <img src="https://audition.edcnitd.co.in/static/base/media/monitor.gif" />
+                    <h4>Invesment</h4>
+                    <p>Entrepreneurship is neither an art nor a science its practice, here you never lose you either win or you learn. Dreams can only go so far. Eventually, you have to take that crucial first step
+                      
+                    </p>
+                  </div>
+                  <div class="b">
+                    <img src="https://audition.edcnitd.co.in/static/base/media/notebook.gif" />
+                    <h4>Work Palce</h4>
+                    <p>
+                      . Entrepreneurs must also have the right mindset and attitude to be successful. This includes being persistent and resilient in the face of challenges, having a positive attitude
+                    </p>
+                  </div>
+                  <div class="b">
+                    <img src="https://audition.edcnitd.co.in/static/base/media/film-strip.gif" />
+                    <h4>Creative Progress</h4>
+                    <p>
+                      To conclude Entrepreneurship is a challenging but rewarding path that requires a combination of creativity, drive, and the ability to take risks.
+                    </p>
+                  </div>
+ 
+</div>
+</div>
+
+
+   
+    <!--for icon by sankeerth-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="edc.js"></script>
+    <script>
+        var si=document.getElementById("slide1");
+        var img=new Array("https://www.edcnitd.co.in/static/img/hmc1.jpeg",
+                          "https://www.edcnitd.co.in/static/img/hmc2.jpeg",
+                           "https://www.edcnitd.co.in/static/img/hmc3.jpeg",
+                           "https://lh5.googleusercontent.com/p/AF1QipOfPzDpgMiwEX_DZlSWuv7s1NpvgnzplmcDofk4=w266-h160-k-no"
+                         );
+var len=img.length;
+var i=0;
+function slider()
+{
+    if(i>len-1)
+    {
+        i=0;
+    }
+    si.src=img[i];
+    i++;
+    setTimeout('slider()',3000);
+}
+    </script>
+    
+    
+</body>
+</html>

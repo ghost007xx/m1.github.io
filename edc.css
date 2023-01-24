@@ -1,0 +1,237 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    overflow: hidden;
+}
+.ghostheader{
+    padding: 0 4rem;
+    height: 5rem;
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(0, 110, 99);
+    align-items: center;
+}
+.ghostheader .edclogo{
+    height: 5rem;
+    width:100px;
+    margin:0;
+}
+.n-1{
+    display:flex;
+    gap:4rem;
+    list-style:none;
+}
+.nlink{
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-size: 2rem;
+    display:inline-block;
+    color: rgb(0, 0, 0);
+}
+.nlink:hover{
+    color:aqua;
+}
+.nii{
+    height:3rem;
+    width:3rem;
+    color: rgb(0, 0, 0);
+}
+.ni{
+    cursor:pointer;
+    display:none;
+}
+.nii[name="close-outline"]{
+    display:none;
+}
+/*banner*/
+.banner{
+    width:100%;
+    
+    overflow:hidden;
+}
+.s{
+    width:100%;
+    height: auto;
+    
+    top:0;
+}
+#slide1{
+    width:100%;
+    height: 92.5vh;
+    
+}
+.over{
+    width:100%;
+    
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top:0rem;
+}
+.content{
+    width:60%;
+    margin: 300px auto 0;
+    text-align: center;
+    color: greenyellow;
+}
+.content h2{
+    font-size: 60px;
+}
+.content h3{
+    width:80%;
+    margin:20px auto 100px;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width:200px;
+    padding:15px;
+    text-align: center;
+    margin:20px auto 100px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid white;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid white;
+    color: aliceblue;
+}
+/*responsive by sankeerth*/
+
+@media(max-width:980px)
+{
+    .ni{
+        display:block;
+    }
+    .edclogo{
+        width:40%;
+    }
+    .ghostheader{
+        position:relative;
+    }
+    .n-1{
+        /*display:none;*/
+        width:100%;
+        height:100vh;
+        position:absolute;
+        top:0;
+        left:0;
+        display:flex;
+        background-color: darkslategrey;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform:translateX(100%);
+        transition:all 0.5s linear;
+        opacity:0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .active .n-1{
+        opacity: 1;
+        transform: translateX(0);
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .active .ni .nii[name="close-outline"]{
+        display: block;
+    }
+    .active .ni .nii[name="apps-outline"]{
+        display: none;
+    }
+    
+
+}
+.heading{
+    padding-top: 200px;
+    font-style: italic;
+    font-size:50px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 800;
+    
+}
+html { overflow-y: scroll; }
+body { position: absolute; }
+.sub{
+    font-style: italic;
+    font-size: 150px;
+    text-align: center;
+    justify-content: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    
+}
+.cont{
+    display: flex;
+    height: auto;
+    margin: 30px auto;
+    background-image: linear-gradient(rgba(0, 238, 255, 0.7),white);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.b{
+    width: 32%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-right: 1%;
+    background: white;
+    border-radius: 10px;
+    transition: 0.9;
+    flex-basis: 30%;
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+}
+.b:hover{
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.5);
+    cursor: pointer;
+}
+img{
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin:0 auto;
+}
+h4,p{
+    text-align: center;
+    color: rgb(37, 32, 32);
+}
+p{
+    font-size: 15px;
+    padding: 0 5px;
+}
+@media (max-width: 800px){
+    .cont{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .cont{
+        width: 85%;
+        display: block;
+    }
+    .b{
+        width: 100%;
+        margin-bottom: 4%;
+       }
+}
+.bg{
+    background-image: url("https://img.freepik.com/free-vector/realistic-studio-lights-empty-background-design_1017-27233.jpg?w=2000");
+    background-position: top;
+}
